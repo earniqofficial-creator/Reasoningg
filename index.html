@@ -178,6 +178,29 @@ body{
     pointer-events:none;
 }
 
+
+            .back--btn {
+            position: absolute;
+            left: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .back--btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-3px);
+        }
+
 .loader{
     width:55px;
     height:55px;
@@ -217,6 +240,13 @@ body{
 </div>
 
 <!-- HEADER -->
+
+
+<a href="https://officialappaarav-spec.github.io/Banking-Mains/" class="back--btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <span>Back</span>
+            </a>
+    
 <div class="header">
     <h1>Banking Mains</h1>
     <h4>Reasoning Mains Level Questions Collection</h4>
@@ -226,7 +256,7 @@ body{
 <div class="folder-grid" id="folderGrid"></div>
 
 <!-- FULL SCREEN FILE OVERLAY -->
-<div class="folder-overlay" id="folderOverlay">
+<div class="folder-overlay" id="folderOverlay">    
     <div class="overlay-header">
         <button class="back-btn" onclick="closeFolder()">← Back</button>
         <div class="overlay-title" id="overlayTitle">Folder Name</div>
